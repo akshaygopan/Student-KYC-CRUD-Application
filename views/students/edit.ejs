@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Student</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <div class="bg">
+      <br>
+      <br>
+      <h3 align="center"><a href="/students">Student List</a></h3>
+      <h1 align="center">Edit Student</h1>
+      <form action="/students/update/<%= student._id%>" method="post">
+        <table align="center" >
+          <tbody>
+              <tr>
+                  <td>Roll No</td>
+                  <td><input type="number" name="rollno" value="<%= student.rollno %>" /></td>
+                </tr>
+            <tr>
+              <td>Name</td>
+              <td><input type="text" name="name" value="<%= student.name %>" /></td>
+            </tr>
+            <tr>
+              <td>Address</td>
+              <td><textarea name="address"><%= student.address %></textarea></td>
+            </tr>
+            <tr>
+              <td>Department</td>
+              <td><input type="text" name="department" value="<%= student.department %>" /></td>
+            </tr>
+            <tr>
+              <td>Aadhaar No</td>
+              <td><input type="number" name="aadhaar" value="<%= student.aadhaar %>" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"><h3 align="center"><button type="submit">Update</button></td></h3>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

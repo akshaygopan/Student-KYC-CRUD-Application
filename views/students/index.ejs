@@ -1,0 +1,37 @@
+.<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student List</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <div class="bg">
+        <br>
+        <br>
+      <h3 align="center"><a href="/students/create">Create Student</a></h3>
+      <h1 class="head" align="center">Student List</h1>
+      <% if(students.length>0) { %>
+      <table align="center" class="list-table">
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Department</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <% for(var i=0; i<students.length;i++) { %>
+            <tr>
+              <td ><a href="/students/show/<%= students[i]._id%>"><%= students[i].name%></a></td>
+              <td><%= students[i].department%></td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+      <% } else { %>
+        <div>No students found.</div>
+      <% } %>
+    </div>
+  </body>
+
+</html>

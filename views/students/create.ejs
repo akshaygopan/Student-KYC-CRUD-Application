@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Student</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <div class="bg">
+        <br>
+        <br>
+      <h3 align="center"><a href="/students">Student List</a></h3>
+      <h1 align="center">Create New Student</h1>
+      <form action="/students/save" method="post">
+        <table align="center">
+          <tbody>
+              <tr>
+                  <td>Roll No</td>
+                  <td><input type="number" name="rollno" /></td>
+                </tr>
+            <tr>
+              <td>Name</td>
+              <td><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+              <td>Address</td>
+              <td><textarea name="address"></textarea></td>
+            </tr>
+            <tr>
+              <td>department</td>
+              <td><input type="text" name="department" /></td>
+            </tr>
+            <tr>
+              <td>Aadhaar No</td>
+              <td><input type="number" name="aadhaar" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"> <h3 align="center"><button type="submit">Save</button></td></h3>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
