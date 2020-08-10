@@ -5,6 +5,10 @@ Student KYC is a CRUD application build up to give details about the student in 
 The framework that is used for building the STUDENT KYC CRUD application is Express.js framework. Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
 Front End - javascript,css,html
+
+
 Back End - Node.js, Framework - Express.js
+
+
 Database - MongoDB
 
